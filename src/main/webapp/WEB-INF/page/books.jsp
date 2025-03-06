@@ -19,7 +19,7 @@
         </c:if>
 
         <c:forEach items="${requestScope.books}" var="book">
-            <a href="http://localhost:8080/book?id=${book.id}"> ${book.title} </a>
+            <a href="http://localhost:8081/book?id=${book.id}"> ${book.title} </a>
 
             <c:choose>
                 <c:when test="${book.year > 300 && book.year < 2000}">
